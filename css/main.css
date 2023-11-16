@@ -81,3 +81,14 @@ ul li {
     background-color: rgba(0, 255, 136, 0.2);
     
 }
+
+input [type="checkbox"] {
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+    background-color: white;
+    /*padding: 8px;
+    border: 2px solid red;*/
+}
