@@ -1,0 +1,110 @@
+/*--CSS Reset--*/
+
+* {
+    border: none;
+    Margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url(../images/pexels-cottonbro-studio-5191390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}    
+    
+#main-head {
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+    color: pink;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+article {
+    width: 400px;
+    border: 4px solid white;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    margin: 10px 12px;
+    text-align: left;
+}
+
+article > h2 {
+    color: white;
+    padding: 4px 8px;
+}
+
+article:first-of-type {
+    border: 4px solid grey;   
+}
+
+#inprogress {
+    border: 4px solid red;
+}
+
+#inprogress h2 {
+    color: pink;
+}
+
+#done {
+    border: 4px solid green;
+}
+
+#done h2 {
+    color: green;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 10px;
+}
+
+.do li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.progress li:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.2);
+
+}
+
+.fin li:nth-child(odd) {
+    background-color: rgba(255, 0, 157, 0.4);   
+}
+
+article li span {
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + span {
+    background-color: black;
+    Border: 1px solid pink;
+    animation: fadeIn 0.7s;
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "👍";
+    position: static;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
